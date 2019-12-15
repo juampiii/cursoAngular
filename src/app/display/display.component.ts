@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import {Button} from '../shared/models/button.model';
 
 @Component({
   selector: 'genericDisplay',

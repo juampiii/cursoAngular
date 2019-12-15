@@ -1,11 +1,26 @@
 export class ButtonInfo {
   value:number;
-  action:string;
+  name:string;
   isOperator:boolean;
 
-  constructor(value:number, action:string = null, isOperator:boolean = false) {
+  constructor(value:number, name:string = null, isOperator:boolean = false) {
     this.value = value;
-    this.action = action;
+    this.name = name;
     this.isOperator = isOperator;
+  }
+
+  getValue()
+  {
+    return this.value;
+  }
+
+  getName()
+  {
+    return this.name;
+  }
+
+  IsOperator()
+  {
+    return this.isOperator;
   }
 }

@@ -1,0 +1,41 @@
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th scope="col" colspan="4"><genericDisplay [displayValue]=(displayOperation)></genericDisplay></th>
+  </tr>
+  <tr>
+    <th scope="col" colspan="4"><genericDisplay [displayValue]=(displayResult)></genericDisplay></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><genericButton [buttonName]=(cleanOperator) [buttonOperator]="true" (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td><genericButton [buttonName]=(divisionOperator) [buttonOperator]="true" (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td><genericButton [buttonName]=(multiplicationOperator) [buttonOperator]="true" (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td><genericButton [buttonName]=(deleteLastOperator) [buttonOperator]="true" (buttonPressed)="buttonPressed($event)"></genericButton></td>
+  </tr>
+  <tr>
+    <td><genericButton [buttonName]="1" [buttonValue]=1 (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td><genericButton [buttonName]="2" [buttonValue]=2 (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td><genericButton [buttonName]="3" [buttonValue]=3 (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td> <genericButton [buttonOperator]="true" [buttonName]=(subtractionOperator) (buttonPressed)="buttonPressed($event)"></genericButton></td>
+  </tr>
+  <tr>
+    <td><genericButton [buttonName]="4" [buttonValue]=4 (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td><genericButton [buttonName]="5" [buttonValue]=5 (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td><genericButton [buttonName]="6" [buttonValue]=6 (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td> <genericButton [buttonOperator]="true" [buttonName]=(addOperator) (buttonPressed)="buttonPressed($event)"></genericButton></td>
+  </tr>
+  <tr>
+    <td><genericButton [buttonName]="7" [buttonValue]=7 (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td><genericButton [buttonName]="8" [buttonValue]=8 (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td><genericButton [buttonName]="9" [buttonValue]=9 (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td rowspan="2"> <genericButton [buttonOperator]="true" [buttonName]=(calculateOperator) (buttonPressed)="buttonPressed($event)" ></genericButton></td>
+  </tr>
+  <tr>
+    <td><genericButton [buttonName]="" (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td><genericButton [buttonName]="0" [buttonValue]=0 (buttonPressed)="buttonPressed($event)"></genericButton></td>
+    <td><genericButton [buttonName]=""  (buttonPressed)="buttonPressed($event)"></genericButton></td>
+  </tr>
+  </tbody>
+</table>
